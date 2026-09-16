@@ -413,3 +413,40 @@ input[type="radio"]{
         scroll-behavior: auto;
     }
 }
+
+.filter-panel { 
+  display: grid; 
+  gap: 1rem; 
+  margin-block: 1.5rem; 
+  padding: 1rem; 
+  border: 0.0625rem solid var(--color-border, #ccc); 
+  border-radius: var(--radius-medium, 0.5rem); 
+  background: var(--color-surface, #fff); 
+}
+
+.filter-panel p { 
+  margin: 0; 
+}
+
+.status-message { 
+  min-height: 1.6em; 
+  color: var(--color-muted, #666); 
+}
+
+.cart-summary { 
+  margin-block-start: 1.5rem; 
+  padding: 1rem; 
+  border-radius: var(--radius-medium, 0.5rem); 
+  background: var(--color-primary-soft, #eef2ff); 
+}
+
+.error-message { 
+  color: var(--color-danger, #dc2626); 
+  font-weight: 700; 
+}
+
+@media (min-width: 48rem) {
+  .filter-panel { 
+    grid-template-columns: repeat(2, minmax(0, 1fr)); 
+  } 
+}
